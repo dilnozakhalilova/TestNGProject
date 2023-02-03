@@ -33,6 +33,11 @@ public class _06_HW_TestNG {
         System.out.println("-->Test One");
 
     }
+    @Test
+    void test5() {
+        System.out.println("-->Test5");
+
+    }
 
     @Test
     void testTwo() {
