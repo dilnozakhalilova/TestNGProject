@@ -26,16 +26,11 @@ import org.testng.annotations.*;
  * Ending Test
  * === End of Regression Test ===
  **/
-public class _06_HW_TestNG {
+public class _06_HWTestNG1 {
 
     @Test
     void testOne() {
         System.out.println("-->Test One");
-
-    }
-    @Test
-    void test5() {
-        System.out.println("-->Test5");
 
     }
 
