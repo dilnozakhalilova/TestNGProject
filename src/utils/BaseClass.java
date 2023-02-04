@@ -13,7 +13,7 @@ import java.time.Duration;
 public class BaseClass extends CommonMethods {
     public static WebDriver driver;
 
-    public static void setUp(String url) {
+    public static void setUp() {
     ConfigsReader.loadProperties(Constants.CONFIGURATION_FILEPATH); // Replaced hard-coded filePath with Constants
         switch (ConfigsReader.getProperties("browser").toLowerCase()) {
             case "chrome" ->{
@@ -27,8 +27,7 @@ public class BaseClass extends CommonMethods {
             default -> throw new RuntimeException("Browser is not supported");
         }
 
-        //driver.get(ConfigsReader.getProperties("url"));
-         driver.get(url);
+        driver.get(ConfigsReader.getProperties("url"));
         driver.manage().window().maximize();
       // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Constants.IMPLICIT_WAIT_TIME));
