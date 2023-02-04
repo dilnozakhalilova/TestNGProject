@@ -28,19 +28,19 @@ import org.testng.annotations.*;
  **/
 public class _06_HWTestNG1 {
 
-    @Test
+    @Test(priority = 1)
     void testOne() {
         System.out.println("-->Test One");
 
     }
 
-    @Test
+    @Test(priority = 2)
     void testTwo() {
         System.out.println("-->Test Two");
 
     }
 
-    @Test
+    @Test(priority = 3)
     void testThree() {
         System.out.println("-->Test Three");
 
