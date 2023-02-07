@@ -9,6 +9,10 @@ public class DashboardPage extends BaseClass {
     @FindBy(id = "welcome")
     public WebElement welcome;      // <== public WebElement welcome = driver.findElement(By.id("welcome"));
 
+
+    @FindBy(xpath = "//div[@id='branding']/a/img")
+    public WebElement dashboardLogo;
+
     public DashboardPage() {
         PageFactory.initElements(driver, this);
     }
