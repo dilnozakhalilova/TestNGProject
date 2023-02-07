@@ -30,7 +30,8 @@ public class _04_Task1 extends BaseClass {
         clickButWaitForClickability(login.loginBtn);
 
         var dashboardPage = new DashboardPage();
-        Assert.assertTrue(dashboardPage.dashboardLogo.isDisplayed(), "Logo is not displayed");
+        Assert.assertTrue(dashboardPage.dashboardLogo.isDisplayed(), "Logo is not displayed");  //Hard/regular Assert
+
 
     }
 
