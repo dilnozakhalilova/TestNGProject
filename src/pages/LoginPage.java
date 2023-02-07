@@ -24,6 +24,9 @@ public class LoginPage {
     @FindBy(xpath = "//input[@id='btnLogin']")           // Locating by xPath
     public WebElement loginBtn;
 
+    @FindBy(id="spanMessage")
+    public WebElement loginErrorMessage;
+
     public LoginPage(){
         PageFactory.initElements(driver,this);   // this==> refering to clas name ==>_02_LoginPageWithPageFactory.class
 

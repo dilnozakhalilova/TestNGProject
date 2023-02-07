@@ -54,9 +54,19 @@ public class _02_AssertDemo extends BaseClass {
         String expectedText = "Welcome Admin";
         String actualText = dashboard.welcome.getText();
 
-        Assert.assertEquals(expectedText,actualText,"'Welcome Admin' text is incorrect");
+        Assert.assertEquals(expectedText, actualText, "'Welcome Admin' text is incorrect"); // Message is optional and prints only if the test fails
+
 
     }
 
 
+
+    @Test
+    void invalidLoginTest() {
+        String expectedErrorMessage = "Password cannot be empty";
+        LoginPage loginPage = new LoginPage();
+        sendText(loginPage.username, ConfigsReader.getProperties("username"));
+        clickButWaitForClickability(loginPage.loginBtn);
+        Assert.assertEquals(loginPage.loginErrorMessage.getText(),expectedErrorMessage,"Message Error is incorrect");
+    }
 }
