@@ -28,12 +28,12 @@ public class _05_SoftAssertDemo extends BaseClass {
         // First: Verify Logo is displayed
         LoginPage login = new LoginPage();
         boolean displayed = login.homepageLogo.isDisplayed();
-        displayed=false;
-        //Assert.assertTrue(displayed, "Homepage Logo is not displayed");  // Validating logo
+        displayed = false;
+        //Assert.assertTrue(displayed, "Homepage Logo is not displayed");  // Validating logo   <== Hard Assert
 
         // Soft Assert( if soft Assert fails, remaining test steps will continue)
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(displayed, "Homepage Logo is not displayed");
+        softAssert.assertTrue(displayed, "Homepage Logo is not displayed");   //<===
 
         // Second: Login to the website
 
@@ -49,6 +49,8 @@ public class _05_SoftAssertDemo extends BaseClass {
         // but if you forget it, if one passes, entire @Test passes
 
         softAssert.assertAll();
+        System.out.println(" After assertAll(), this line will not be executed if any test fails");
+        System.out.println("All test passed");
     }
 
 
