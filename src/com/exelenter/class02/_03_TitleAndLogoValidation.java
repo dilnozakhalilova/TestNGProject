@@ -34,7 +34,7 @@ public class _03_TitleAndLogoValidation extends BaseClass {
 
 
 }
-
+// Note: if a test assertion fails, test will continue and quit the browser, because assert has a built-in Try Catch.
 
 
 
