@@ -16,13 +16,13 @@ public class LoginPage {
 // @FindBy() == driver.findElement()
 
     @FindBy(id = "txtUsername")      // Locating by ID
-    public WebElement username2;
+    public WebElement username;
 
     @FindBy(name = "txtPassword")    // Locating by Name
-    public WebElement password2;
+    public WebElement password;
 
     @FindBy(xpath = "//input[@id='btnLogin']")           // Locating by xPath
-    public WebElement loginBtn2;
+    public WebElement loginBtn;
 
     public LoginPage(){
         PageFactory.initElements(driver,this);   // this==> refering to clas name ==>_02_LoginPageWithPageFactory.class

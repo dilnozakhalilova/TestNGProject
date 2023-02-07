@@ -24,9 +24,9 @@ public class LoginTest extends BaseClass {
         // With PageFactory
 
         var login = new LoginPage();
-        sendText(login.username2, ConfigsReader.getProperties("username"));
-        sendText(login.password2, ConfigsReader.getProperties("password"));
-        clickButWaitForClickability(login.loginBtn2);
+        sendText(login.username, ConfigsReader.getProperties("username"));
+        sendText(login.password, ConfigsReader.getProperties("password"));
+        clickButWaitForClickability(login.loginBtn);
 
 
         tearDown();

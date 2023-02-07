@@ -46,10 +46,10 @@ public class _01_ValidationTest extends BaseClass {
     void validLoginTest() {
         var loginPage = new LoginPage();
         // sendText(loginPage.username2,"Admin");    // Not recommended
-        sendText(loginPage.username2, ConfigsReader.getProperties("username"));
-        sendText(loginPage.password2, "Exelent2022Sdet!");
-        sendText(loginPage.password2, ConfigsReader.getProperties("password"));
-        click(loginPage.loginBtn2);
+        sendText(loginPage.username, ConfigsReader.getProperties("username"));
+        sendText(loginPage.password, "Exelent2022Sdet!");
+        sendText(loginPage.password, ConfigsReader.getProperties("password"));
+        click(loginPage.loginBtn);
 
         var dashboard = new DashboardPage();
         String expectedValue = "Welcome Admin";
