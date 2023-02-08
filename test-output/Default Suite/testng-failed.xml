@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="TestNGProject(failed)">
     <classes>
-      <class name="com.exelenter.class3._01_SoftAssertRecap">
+      <class name="test.LoginTest">
         <methods>
-          <include name="testCase"/>
+          <include name="startBrowser"/>
+          <include name="quitBrowser"/>
+          <include name="validUserInvalidPassword"/>
         </methods>
-      </class> <!-- com.exelenter.class3._01_SoftAssertRecap -->
+      </class> <!-- test.LoginTest -->
     </classes>
   </test> <!-- TestNGProject(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

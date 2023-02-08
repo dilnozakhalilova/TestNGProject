@@ -50,7 +50,7 @@ public class LoginTest extends BaseClass {
         sendText(loginPage.username, ConfigsReader.getProperties("username"));    // Valid username
         sendText(loginPage.password, invalidPassword);                                // Invalid password
         clickButWaitForClickability(loginPage.loginBtn);
-        Assert.assertEquals(loginPage.loginErrorMessage, expectedErrorMessage, "Error message is incorrect. Test failed.");
+        Assert.assertEquals(loginPage.loginErrorMessage.getText(), expectedErrorMessage, "Error message is incorrect. Test failed.");
     }
 
     @Test
@@ -59,7 +59,7 @@ public class LoginTest extends BaseClass {
         LoginPage loginPage = new LoginPage();
         sendText(loginPage.username, ConfigsReader.getProperties("username"));   // Valid username, Password empty(skipped)
         clickButWaitForClickability(loginPage.loginBtn);
-        Assert.assertEquals(loginPage.loginErrorMessage,expectedErrorMessage,"Error message is incorrect. Test failed.");
+        Assert.assertEquals(loginPage.loginErrorMessage.getText(),expectedErrorMessage,"Error message is incorrect. Test failed.");
     }
 
 
