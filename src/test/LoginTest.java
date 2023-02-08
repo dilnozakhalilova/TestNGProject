@@ -2,6 +2,8 @@ package test;
 
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.DashboardPage;
 import pages.LoginPage;
@@ -16,11 +18,21 @@ import utils.ConfigsReader;
  */
 
 public class LoginTest extends BaseClass {
+
+    @BeforeMethod
+    void startBrowser(){
+        setUp();
+    }
+
+    @AfterMethod
+    void quitBrowser(){
+        tearDown();
+    }
     @Test
     public void validAdminLogin() {
-        var login = new LoginPage();
-        sendText(login.username, ConfigsReader.getProperties("username"));
-        sendText(login.password, ConfigsReader.getProperties("password"));
+        var login = new LoginPage();                                            // Happy path
+        sendText(login.username, ConfigsReader.getProperties("username"));  // Valid username
+        sendText(login.password, ConfigsReader.getProperties("password"));  // Valid Password
         clickButWaitForClickability(login.loginBtn);
 
         var dashboard = new DashboardPage();
@@ -34,17 +46,20 @@ public class LoginTest extends BaseClass {
     public void validUserInvalidPassword() {
         String invalidPassword = "Pass1234";
         String expectedErrorMessage = "Invalid credentials";
-        LoginPage loginPage = new LoginPage();
-        sendText(loginPage.username, ConfigsReader.getProperties("username"));   // Valid username
-        sendText(loginPage.password, invalidPassword);                                  // Invalid password
+        LoginPage loginPage = new LoginPage();                                        // Negative testing
+        sendText(loginPage.username, ConfigsReader.getProperties("username"));    // Valid username
+        sendText(loginPage.password, invalidPassword);                                // Invalid password
         clickButWaitForClickability(loginPage.loginBtn);
-        Assert.assertEquals(loginPage.loginErrorMessage,expectedErrorMessage,"error message is incorrect. Test failed.");
+        Assert.assertEquals(loginPage.loginErrorMessage, expectedErrorMessage, "Error message is incorrect. Test failed.");
     }
 
     @Test
     public void validUserAnEmptyPassword() {
-
-
+        String expectedErrorMessage ="Password cannot be empty";
+        LoginPage loginPage = new LoginPage();
+        sendText(loginPage.username, ConfigsReader.getProperties("username"));   // Valid username, Password empty(skipped)
+        clickButWaitForClickability(loginPage.loginBtn);
+        Assert.assertEquals(loginPage.loginErrorMessage,expectedErrorMessage,"Error message is incorrect. Test failed.");
     }
 
 
