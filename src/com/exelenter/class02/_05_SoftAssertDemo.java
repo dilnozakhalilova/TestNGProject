@@ -53,5 +53,8 @@ public class _05_SoftAssertDemo extends BaseClass {
         System.out.println("All test passed");
     }
 
+    // TestNG
+    // 1.Group
+    // 2.XML
 
 }
