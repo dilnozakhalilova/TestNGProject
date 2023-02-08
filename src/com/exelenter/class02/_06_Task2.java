@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import pages.LoginPage;
 import utils.BaseClass;
 import utils.ConfigsReader;
@@ -37,13 +38,17 @@ public class _06_Task2 extends BaseClass {
         String websiteTitle = driver.getTitle();
         boolean websiteTitleEmpty = websiteTitle.isEmpty();
 
-        Assert.assertTrue(websiteTitleEmpty,"Your website has a tile and is Not empty");
+        //  Assert.assertTrue(websiteTitleEmpty,"Your website has a tile and is Not empty");
+
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertTrue(websiteTitleEmpty);
 
         LoginPage loginPage = new LoginPage();
         sendText(loginPage.username, ConfigsReader.getProperties("username"));
         sendText(loginPage.password, ConfigsReader.getProperties("password"));
         clickButWaitForClickability(loginPage.loginBtn);
 
+        softAssert.assertAll();
 
 
     }
