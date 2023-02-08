@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-07T20:31:54 EST" name="Default Suite" finished-at="2023-02-07T20:31:54 EST" duration-ms="61">
+  <suite started-at="2023-02-07T20:35:15 EST" name="Default Suite" finished-at="2023-02-07T20:35:15 EST" duration-ms="61">
     <groups>
     </groups>
-    <test started-at="2023-02-07T20:31:54 EST" name="TestNGProject" finished-at="2023-02-07T20:31:54 EST" duration-ms="61">
+    <test started-at="2023-02-07T20:35:15 EST" name="TestNGProject" finished-at="2023-02-07T20:35:15 EST" duration-ms="61">
       <class name="com.exelenter.class3._01_SoftAssertRecap">
-        <test-method signature="testCase()[pri:0, instance:com.exelenter.class3._01_SoftAssertRecap@64c87930]" started-at="2023-02-07T20:31:54 EST" name="testCase" finished-at="2023-02-07T20:31:54 EST" duration-ms="12" status="FAIL">
+        <test-method signature="testCase()[pri:0, instance:com.exelenter.class3._01_SoftAssertRecap@52aa2946]" started-at="2023-02-07T20:35:15 EST" name="testCase" finished-at="2023-02-07T20:35:15 EST" duration-ms="13" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
