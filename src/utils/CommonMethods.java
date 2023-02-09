@@ -21,7 +21,7 @@ import static utils.BaseClass.driver;
  */
 
 
-public class CommonMethods {
+public class CommonMethods extends PageInitializer {
     /**
      * Method will Switch focus to next window/tab based on the window titl/name
      *

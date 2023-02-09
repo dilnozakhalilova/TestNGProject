@@ -22,6 +22,7 @@ public class LoginTest extends BaseClass {
     @BeforeMethod
     void startBrowser(){
         setUp();
+        initialize();
     }
 
     @AfterMethod
@@ -30,14 +31,14 @@ public class LoginTest extends BaseClass {
     }
     @Test
     public void validAdminLogin() {
-        var login = new LoginPage();                                            // Happy path
-        sendText(login.username, ConfigsReader.getProperties("username"));  // Valid username
-        sendText(login.password, ConfigsReader.getProperties("password"));  // Valid Password
-        clickButWaitForClickability(login.loginBtn);
+                                                 // Happy path
+        sendText(loginPage.username, ConfigsReader.getProperties("username"));  // Valid username
+        sendText(loginPage.password, ConfigsReader.getProperties("password"));  // Valid Password
+        clickButWaitForClickability(loginPage.loginBtn);
 
-        var dashboard = new DashboardPage();
+
         String expectedText = "Welcome Admin";
-        String actualText = dashboard.welcome.getText();
+        String actualText = dashboardPage.welcome.getText();
         Assert.assertEquals(expectedText, actualText, "'Welcome Admin' text is incorrect");
 
     }
@@ -46,7 +47,7 @@ public class LoginTest extends BaseClass {
     public void validUserInvalidPassword() {
         String invalidPassword = "Pass1234";
         String expectedErrorMessage = "Invalid credentials";
-        LoginPage loginPage = new LoginPage();                                        // Negative testing
+        // Negative testing
         sendText(loginPage.username, ConfigsReader.getProperties("username"));    // Valid username
         sendText(loginPage.password, invalidPassword);                                // Invalid password
         clickButWaitForClickability(loginPage.loginBtn);
@@ -56,7 +57,6 @@ public class LoginTest extends BaseClass {
     @Test
     public void validUserAnEmptyPassword() {
         String expectedErrorMessage ="Password cannot be empty";
-        LoginPage loginPage = new LoginPage();
         sendText(loginPage.username, ConfigsReader.getProperties("username"));   // Valid username, Password empty(skipped)
         clickButWaitForClickability(loginPage.loginBtn);
         Assert.assertEquals(loginPage.loginErrorMessage.getText(),expectedErrorMessage,"Error message is incorrect. Test failed.");

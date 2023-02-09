@@ -26,6 +26,13 @@ public class AddEmployeePage extends BaseClass {
         PageFactory.initElements(driver,this);
     }
 
+    public void addEmployee(String empFirstName, String empLastName, String filePath){
+        sendText(firstName,empFirstName);
+        sendText(lastName, empLastName);
+        sendText(uploadPhoto,filePath);  // Retrieving photo location for uploading
+        clickButWaitForClickability(saveBtn);
+
+    }
 
 
 
