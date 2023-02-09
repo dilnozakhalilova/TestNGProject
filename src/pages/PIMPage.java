@@ -21,6 +21,11 @@ public PIMPage(){
     PageFactory.initElements(driver,this);
 }
 
+public void navigateToAddEmployee(){
+    clickButWaitForClickability(PIM);
+    clickButWaitForClickability(addEmployee);
+}
+
 
 
 
