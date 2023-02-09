@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-08T21:05:39 EST" name="Default Suite" finished-at="2023-02-08T21:05:49 EST" duration-ms="10716">
+  <suite started-at="2023-02-08T21:20:27 EST" name="Default Suite" finished-at="2023-02-08T21:20:39 EST" duration-ms="12391">
     <groups>
     </groups>
-    <test started-at="2023-02-08T21:05:39 EST" name="TestNGProject" finished-at="2023-02-08T21:05:49 EST" duration-ms="10716">
+    <test started-at="2023-02-08T21:20:27 EST" name="TestNGProject" finished-at="2023-02-08T21:20:39 EST" duration-ms="12391">
       <class name="test.AddEmployeeTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:test.AddEmployeeTest@2890c451]" started-at="2023-02-08T21:05:39 EST" name="openBrowser" finished-at="2023-02-08T21:05:41 EST" duration-ms="2616" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:test.AddEmployeeTest@2145433b]" started-at="2023-02-08T21:20:27 EST" name="openBrowser" finished-at="2023-02-08T21:20:29 EST" duration-ms="2528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="addEmployeeTest()[pri:0, instance:test.AddEmployeeTest@2890c451]" started-at="2023-02-08T21:05:41 EST" name="addEmployeeTest" finished-at="2023-02-08T21:05:47 EST" duration-ms="5862" status="PASS">
+        <test-method signature="addEmployeeTest()[pri:0, instance:test.AddEmployeeTest@2145433b]" started-at="2023-02-08T21:20:29 EST" name="addEmployeeTest" finished-at="2023-02-08T21:20:37 EST" duration-ms="7627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:test.AddEmployeeTest@2890c451]" started-at="2023-02-08T21:05:47 EST" name="quitBrowser" finished-at="2023-02-08T21:05:49 EST" duration-ms="2197" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:test.AddEmployeeTest@2145433b]" started-at="2023-02-08T21:20:37 EST" name="quitBrowser" finished-at="2023-02-08T21:20:39 EST" duration-ms="2199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
