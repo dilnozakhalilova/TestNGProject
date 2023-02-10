@@ -1,25 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-09T21:05:04 EST" name="Default Suite" finished-at="2023-02-09T21:05:14 EST" duration-ms="9425">
+  <suite started-at="2023-02-09T22:01:19 EST" name="Regression Suite" finished-at="2023-02-09T22:01:46 EST" duration-ms="26986">
     <groups>
     </groups>
-    <test started-at="2023-02-09T21:05:04 EST" name="TestNGProject" finished-at="2023-02-09T21:05:14 EST" duration-ms="9425">
+    <test started-at="2023-02-09T22:01:19 EST" name="Add Employee Test" finished-at="2023-02-09T22:01:33 EST" duration-ms="13588">
       <class name="test.AddEmployeeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AddEmployeeTest@1d548a08]" started-at="2023-02-09T21:05:04 EST" name="setUp" finished-at="2023-02-09T21:05:07 EST" duration-ms="2661" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AddEmployeeTest@7d68ef40]" started-at="2023-02-09T22:01:19 EST" name="setUp" finished-at="2023-02-09T22:01:22 EST" duration-ms="2658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addEmployeeTest()[pri:0, instance:test.AddEmployeeTest@1d548a08]" started-at="2023-02-09T21:05:07 EST" name="addEmployeeTest" finished-at="2023-02-09T21:05:11 EST" duration-ms="4534" status="PASS">
+        <test-method signature="addEmployeeTest()[pri:0, instance:test.AddEmployeeTest@7d68ef40]" started-at="2023-02-09T22:01:22 EST" name="addEmployeeTest" finished-at="2023-02-09T22:01:31 EST" duration-ms="8683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AddEmployeeTest@1d548a08]" started-at="2023-02-09T21:05:11 EST" name="tearDown" finished-at="2023-02-09T21:05:14 EST" duration-ms="2191" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AddEmployeeTest@7d68ef40]" started-at="2023-02-09T22:01:31 EST" name="tearDown" finished-at="2023-02-09T22:01:33 EST" duration-ms="2201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- test.AddEmployeeTest -->
-    </test> <!-- TestNGProject -->
-  </suite> <!-- Default Suite -->
+    </test> <!-- Add Employee Test -->
+    <test started-at="2023-02-09T22:01:33 EST" name="Login Test" finished-at="2023-02-09T22:01:46 EST" duration-ms="13359">
+      <class name="test.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginTest@3d299e3]" started-at="2023-02-09T22:01:33 EST" name="setUp" finished-at="2023-02-09T22:01:34 EST" duration-ms="1388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validAdminLogin()[pri:0, instance:test.LoginTest@3d299e3]" started-at="2023-02-09T22:01:34 EST" name="validAdminLogin" finished-at="2023-02-09T22:01:35 EST" duration-ms="1283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validAdminLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@3d299e3]" started-at="2023-02-09T22:01:35 EST" name="tearDown" finished-at="2023-02-09T22:01:38 EST" duration-ms="2143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginTest@3d299e3]" started-at="2023-02-09T22:01:38 EST" name="setUp" finished-at="2023-02-09T22:01:39 EST" duration-ms="1362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validUserInvalidPassword()[pri:0, instance:test.LoginTest@3d299e3]" started-at="2023-02-09T22:01:39 EST" name="validUserInvalidPassword" finished-at="2023-02-09T22:01:40 EST" duration-ms="992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUserInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@3d299e3]" started-at="2023-02-09T22:01:40 EST" name="tearDown" finished-at="2023-02-09T22:01:42 EST" duration-ms="2226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginTest@3d299e3]" started-at="2023-02-09T22:01:42 EST" name="setUp" finished-at="2023-02-09T22:01:44 EST" duration-ms="1403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validUserAnEmptyPassword()[pri:0, instance:test.LoginTest@3d299e3]" started-at="2023-02-09T22:01:44 EST" name="validUserAnEmptyPassword" finished-at="2023-02-09T22:01:44 EST" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUserAnEmptyPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@3d299e3]" started-at="2023-02-09T22:01:44 EST" name="tearDown" finished-at="2023-02-09T22:01:46 EST" duration-ms="2259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.LoginTest -->
+    </test> <!-- Login Test -->
+  </suite> <!-- Regression Suite -->
 </testng-results>

@@ -17,22 +17,10 @@ import utils.ConfigsReader;
 
 public class LoginTest extends BaseClass {
 
-    @BeforeMethod
-    void startBrowser(){
-        setUp();
-        initialize();
-    }
-
-    @AfterMethod
-    void quitBrowser(){
-        tearDown();
-    }
     @Test
     public void validAdminLogin() {
                                                  // Happy path
-        sendText(loginPage.username, ConfigsReader.getProperties("username"));  // Valid username
-        sendText(loginPage.password, ConfigsReader.getProperties("password"));  // Valid Password
-        clickButWaitForClickability(loginPage.loginBtn);
+        loginPage.loginToWebsite("username","password");
         String expectedText = "Welcome Admin";
         String actualText = dashboardPage.welcome.getText();
         Assert.assertEquals(expectedText, actualText, "'Welcome Admin' text is incorrect");

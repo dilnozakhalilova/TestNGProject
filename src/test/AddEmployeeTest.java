@@ -9,7 +9,7 @@ import utils.ConfigsReader;
 public class AddEmployeeTest extends BaseClass {
     @Test
     void addEmployeeTest() {
-        loginPage.loginToWebsite(ConfigsReader.getProperties("username"), ConfigsReader.getProperties("password"));
+        loginPage.loginToWebsite("username","password");
         pimPage.navigateToAddEmployee();
         System.out.println("New employee ID: " + addEmployeePage.employeeId.getAttribute("value"));
         addEmployeePage.addEmployee(ConfigsReader.getProperties("empFirstName"),ConfigsReader.getProperties("empLastName"),ConfigsReader.getProperties("filePath")); // This method will add a new employee
