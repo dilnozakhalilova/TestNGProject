@@ -15,7 +15,7 @@ import utils.ConfigsReader;
  * US 83764: As a Business User, here goes your request...
  */
 
-public class LoginTest extends BaseClass {
+public class LoginTest_old extends BaseClass {
 
     @BeforeMethod
     void startBrowser(){

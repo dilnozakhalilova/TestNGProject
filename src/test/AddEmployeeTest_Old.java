@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import utils.BaseClass;
 import utils.ConfigsReader;
 
-public class AddEmployeeTest extends BaseClass {
+public class AddEmployeeTest_Old extends BaseClass {
     @BeforeMethod
     void openBrowser() {
         setUp();
