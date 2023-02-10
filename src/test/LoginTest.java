@@ -33,8 +33,6 @@ public class LoginTest extends BaseClass {
         sendText(loginPage.username, ConfigsReader.getProperties("username"));  // Valid username
         sendText(loginPage.password, ConfigsReader.getProperties("password"));  // Valid Password
         clickButWaitForClickability(loginPage.loginBtn);
-
-
         String expectedText = "Welcome Admin";
         String actualText = dashboardPage.welcome.getText();
         Assert.assertEquals(expectedText, actualText, "'Welcome Admin' text is incorrect");
