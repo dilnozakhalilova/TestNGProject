@@ -1,4 +1,4 @@
-package test;
+package test_archive;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;

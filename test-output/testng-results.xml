@@ -6,7 +6,7 @@
     <groups>
     </groups>
     <test started-at="2023-02-08T22:06:29 EST" name="TestNGProject" finished-at="2023-02-08T22:06:37 EST" duration-ms="8455">
-      <class name="test.AddEmployeeTest_Old">
+      <class name="test_archive.AddEmployeeTest_Old">
         <test-method is-config="true" signature="openBrowser()[pri:0, instance:test.AddEmployeeTest@55a1c291]" started-at="2023-02-08T22:06:29 EST" name="openBrowser" finished-at="2023-02-08T22:06:31 EST" duration-ms="2549" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -19,7 +19,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- test.AddEmployeeTest_Old -->
+      </class> <!-- test_archive.AddEmployeeTest_Old -->
     </test> <!-- TestNGProject -->
   </suite> <!-- Default Suite -->
 </testng-results>

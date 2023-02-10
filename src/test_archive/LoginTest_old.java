@@ -1,4 +1,4 @@
-package test;
+package test_archive;
 
 
 import org.testng.Assert;
