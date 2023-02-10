@@ -144,7 +144,11 @@
 &lt;suite name=&quot;Default Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TestNGProject&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.AddEmployeeTest&quot;/&gt;
+      &lt;class name=&quot;test.AddEmployeeTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addEmployeeTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- test.AddEmployeeTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestNGProject --&gt;
 &lt;/suite&gt; &lt;!-- Default Suite --&gt;
@@ -188,12 +192,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addEmployeeTest')
 data.setCell(0, 2, 'test.AddEmployeeTest')
-data.setCell(0, 3, 5504);
+data.setCell(0, 3, 4534);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -221,16 +225,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">test.AddEmployeeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">openBrowser</span>
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addEmployeeTest</span>
-                <span class="method-start">3765 ms</span>
+                <span class="method-start">2662 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">9272 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7199 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

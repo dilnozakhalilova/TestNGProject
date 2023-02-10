@@ -7,19 +7,6 @@ import utils.BaseClass;
 import utils.ConfigsReader;
 
 public class AddEmployeeTest extends BaseClass {
-    @BeforeMethod
-    void openBrowser() {
-        setUp();
-        initialize();  // we are creating an instance of the page object here
-
-    }
-
-    @AfterMethod
-    void quitBrowser() {
-        tearDown();
-    }
-
-
     @Test
     void addEmployeeTest() {
         loginPage.loginToWebsite(ConfigsReader.getProperties("username"), ConfigsReader.getProperties("password"));

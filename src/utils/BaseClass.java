@@ -30,11 +30,11 @@ public class BaseClass extends CommonMethods {
             }
             default -> throw new RuntimeException("Browser is not supported");
         }
-
         driver.get(ConfigsReader.getProperties("url"));
         driver.manage().window().maximize();
         // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Constants.IMPLICIT_WAIT_TIME));
+        initialize();
     }
 
     @AfterMethod
@@ -47,6 +47,7 @@ public class BaseClass extends CommonMethods {
         if (driver != null) {     // This line is optional. We only use it to prevent NullPointerException.
             driver.quit();
         }
+
     }
 
 

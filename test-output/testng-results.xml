@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-09T20:56:51 EST" name="Default Suite" finished-at="2023-02-09T20:57:03 EST" duration-ms="11507">
+  <suite started-at="2023-02-09T21:05:04 EST" name="Default Suite" finished-at="2023-02-09T21:05:14 EST" duration-ms="9425">
     <groups>
     </groups>
-    <test started-at="2023-02-09T20:56:51 EST" name="TestNGProject" finished-at="2023-02-09T20:57:03 EST" duration-ms="11507">
+    <test started-at="2023-02-09T21:05:04 EST" name="TestNGProject" finished-at="2023-02-09T21:05:14 EST" duration-ms="9425">
       <class name="test.AddEmployeeTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:test.AddEmployeeTest@55a1c291]" started-at="2023-02-09T20:56:51 EST" name="openBrowser" finished-at="2023-02-09T20:56:55 EST" duration-ms="3764" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AddEmployeeTest@1d548a08]" started-at="2023-02-09T21:05:04 EST" name="setUp" finished-at="2023-02-09T21:05:07 EST" duration-ms="2661" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="addEmployeeTest()[pri:0, instance:test.AddEmployeeTest@55a1c291]" started-at="2023-02-09T20:56:55 EST" name="addEmployeeTest" finished-at="2023-02-09T20:57:01 EST" duration-ms="5504" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest()[pri:0, instance:test.AddEmployeeTest@1d548a08]" started-at="2023-02-09T21:05:07 EST" name="addEmployeeTest" finished-at="2023-02-09T21:05:11 EST" duration-ms="4534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:test.AddEmployeeTest@55a1c291]" started-at="2023-02-09T20:57:01 EST" name="quitBrowser" finished-at="2023-02-09T20:57:03 EST" duration-ms="2194" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AddEmployeeTest@1d548a08]" started-at="2023-02-09T21:05:11 EST" name="tearDown" finished-at="2023-02-09T21:05:14 EST" duration-ms="2191" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitBrowser -->
+        </test-method> <!-- tearDown -->
       </class> <!-- test.AddEmployeeTest -->
     </test> <!-- TestNGProject -->
   </suite> <!-- Default Suite -->
