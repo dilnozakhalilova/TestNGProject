@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Suite">
+    <test name="Parallel Testing" parallel="methods">
+        <classes>
+            <class name="com.exelenter.class4._01_GroupsDemo">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                    <include name="test4"/>
+                    <include name="test5"/>
+                    <include name="test6"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
