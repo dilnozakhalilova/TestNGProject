@@ -7,7 +7,6 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="validUserAnEmptyPassword"/>
           <include name="validAdminLogin"/>
           <include name="validUserInvalidPassword"/>
         </methods>
