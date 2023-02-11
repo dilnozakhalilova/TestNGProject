@@ -38,9 +38,9 @@ public class _02_DataProvider {
 
         // 2D Array, Arrays of Arrays
         Object[][] user2D = {
-                {"John Doe", " Sam Lee", 'c', 45},
-                {"John Doe", " Sam Lee", 'c', 45},
-                {"John Doe", " Sam Lee", 'c', 45}};
+                {"John Doe", " Sam Lee", 'c', 0.99},
+                {"John Doe", " Sam Lee", 'c', 5.65},
+                {"John Doe", " Sam Lee", 'c', 66.99}};
 
 
     }
