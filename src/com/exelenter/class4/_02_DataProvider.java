@@ -3,6 +3,7 @@ package com.exelenter.class4;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -16,6 +17,8 @@ public class _02_DataProvider {
 
     }
 
+    //Manupulating without dataProvider
+    
     public void userList() {
         List<String> stringArrayList = new ArrayList<>();
         stringArrayList.add("John");
@@ -41,8 +44,7 @@ public class _02_DataProvider {
                 {"John Doe", " Sam Lee", 'c', 0.99},
                 {"John Doe", " Sam Lee", 'c', 5.65},
                 {"John Doe", " Sam Lee", 'c', 66.99}};
-
-
+        System.out.println("Arrays.deepToString(user2D) = " + Arrays.deepToString(user2D));
     }
 
 
