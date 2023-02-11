@@ -2,27 +2,27 @@
 <testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-10T20:55:42 EST" name="Groups Suite" finished-at="2023-02-10T20:55:42 EST" duration-ms="48">
+  <suite started-at="2023-02-10T20:57:34 EST" name="Regression Suite" finished-at="2023-02-10T20:57:34 EST" duration-ms="52">
     <groups>
       <group name="regression">
-        <method signature="_01_GroupsDemo.test4()[pri:0, instance:com.exelenter.class4._01_GroupsDemo@6328d34a]" name="test4" class="com.exelenter.class4._01_GroupsDemo"/>
+        <method signature="_01_GroupsDemo.test3()[pri:0, instance:com.exelenter.class4._01_GroupsDemo@61009542]" name="test3" class="com.exelenter.class4._01_GroupsDemo"/>
+        <method signature="_01_GroupsDemo.test4()[pri:0, instance:com.exelenter.class4._01_GroupsDemo@61009542]" name="test4" class="com.exelenter.class4._01_GroupsDemo"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="_01_GroupsDemo.test2()[pri:0, instance:com.exelenter.class4._01_GroupsDemo@6328d34a]" name="test2" class="com.exelenter.class4._01_GroupsDemo"/>
-        <method signature="_01_GroupsDemo.test4()[pri:0, instance:com.exelenter.class4._01_GroupsDemo@6328d34a]" name="test4" class="com.exelenter.class4._01_GroupsDemo"/>
+        <method signature="_01_GroupsDemo.test4()[pri:0, instance:com.exelenter.class4._01_GroupsDemo@61009542]" name="test4" class="com.exelenter.class4._01_GroupsDemo"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-02-10T20:55:42 EST" name="Group Test" finished-at="2023-02-10T20:55:42 EST" duration-ms="48">
+    <test started-at="2023-02-10T20:57:34 EST" name="Regression Test" finished-at="2023-02-10T20:57:34 EST" duration-ms="52">
       <class name="com.exelenter.class4._01_GroupsDemo">
-        <test-method signature="test2()[pri:0, instance:com.exelenter.class4._01_GroupsDemo@6328d34a]" started-at="2023-02-10T20:55:42 EST" name="test2" finished-at="2023-02-10T20:55:42 EST" duration-ms="6" status="PASS">
+        <test-method signature="test3()[pri:0, instance:com.exelenter.class4._01_GroupsDemo@61009542]" started-at="2023-02-10T20:57:34 EST" name="test3" finished-at="2023-02-10T20:57:34 EST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method signature="test4()[pri:0, instance:com.exelenter.class4._01_GroupsDemo@6328d34a]" started-at="2023-02-10T20:55:42 EST" name="test4" finished-at="2023-02-10T20:55:42 EST" duration-ms="1" status="PASS">
+        </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:0, instance:com.exelenter.class4._01_GroupsDemo@61009542]" started-at="2023-02-10T20:57:34 EST" name="test4" finished-at="2023-02-10T20:57:34 EST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test4 -->
       </class> <!-- com.exelenter.class4._01_GroupsDemo -->
-    </test> <!-- Group Test -->
-  </suite> <!-- Groups Suite -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- Regression Suite -->
 </testng-results>
