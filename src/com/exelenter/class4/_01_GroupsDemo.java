@@ -3,7 +3,7 @@ package com.exelenter.class4;
 import org.testng.annotations.Test;
 
 public class _01_GroupsDemo {
-    @Test
+    @Test(dependsOnMethods = "smoke")
     void test1() {
         System.out.println("Test 1");
     }
