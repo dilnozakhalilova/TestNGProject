@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import utils.BaseClass;
 
 public class DashboardPage extends BaseClass {
-    @FindBy(xpath = "//div[@id='branding']/a[2]")
+    @FindBy(id = "welcome")
     public WebElement welcome;      // <== public WebElement welcome = driver.findElement(By.id("welcome"));
 
 

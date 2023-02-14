@@ -23,12 +23,12 @@ public class _04_DataProviderDemo3 extends BaseClass {
 
     @DataProvider
     public Object [][] dataProviderMethod(){
-        Object [][]data = {
-                {"Admin","Exelent202"},
+        return new Object [][] {
+                {"Admin","Exelent2022Sdet!"},
                 {"johndoe","k#G886@H"},
                 {"EssUser","Ess@2023"}
         };
-        return data;
+
     }
 
 }
