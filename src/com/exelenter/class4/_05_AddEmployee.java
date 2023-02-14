@@ -1,6 +1,8 @@
 package com.exelenter.class4;
 
+import io.netty.handler.codec.serialization.ObjectEncoder;
 import org.bouncycastle.jcajce.provider.symmetric.ARC4;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import utils.BaseClass;
@@ -19,28 +21,37 @@ import utils.BaseClass;
          8. Close the browser
  */
 public class _05_AddEmployee extends BaseClass {
-    @Test
+    @Test(dataProvider = "testOne")
     public void addEmployeeTest(String firstName, String lastName) {
         loginPage.loginToWebsite("username", "password");
         wait(1);
         pimPage.navigateToAddEmployee();
         sendText(addEmployeePage.firstName, firstName);
         sendText(addEmployeePage.lastName, lastName);
-        String expectedEmployeeId = addEmployeePage.employeeId.getAttribute("value");
+        String expectedEmployeeId = addEmployeePage.employeeId.getAttribute("value");  // addEmployeePage
         clickButWaitForClickability(addEmployeePage.saveBtn);
-// Validate
+
+
+        // Validate
+        waitForVisibility(personalDetailsPage.personalDetailsHeader);
+        String actualEmployeeId = personalDetailsPage.employeeId.getAttribute("value");
+        Assert.assertEquals(actualEmployeeId, expectedEmployeeId, "Employee ID does not match");
 
     }
 
+    @DataProvider(name = "testOne")         // When calling DataProvider in your @Test we can either use name of the method OR alias name.
 
-    @DataProvider
-    public Object addemployeeMethod(){
-       return Object[][]{
-            {},
-            {},
-            {},
+    public Object[][] addEmployeesMethod() {
+        Object[][] employee = {
+                {"John", "Doe"},
+                {"Jack", "Sparrow"}
+        };
 
-        }
+
+        return employee;
     }
+
+    ;
+
 
 }

@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content passed suite-Default_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="com.exelenter.class4._03_DataProviderDemo2" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_Suite" title="com.exelenter.class4._04_DataProviderDemo3" class="method navigator-link" hash-for-method="loginTest(johndoe, k#G886@H, 35)">loginTest(johndoe, k#G886@H, 35)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.exelenter.class4._04_DataProviderDemo3" class="method navigator-link" hash-for-method="loginTest(Admin, Exelent2022Sdet!, 25)">loginTest(Admin, Exelent2022Sdet!, 25)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.exelenter.class4._04_DataProviderDemo3" class="method navigator-link" hash-for-method="loginTest(EssUser, Ess@2023, 45)">loginTest(EssUser, Ess@2023, 45)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_Suite -->
@@ -120,14 +130,31 @@
           <div class="suite-Default_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.exelenter.class4._03_DataProviderDemo2</span>
+              <span class="class-name">com.exelenter.class4._04_DataProviderDemo3</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
+                  <a name="loginTest(johndoe, k#G886@H, 35)">
+                  </a> <!-- loginTest(johndoe, k#G886@H, 35) -->
                   <span class="method-name">loginTest</span>
+                  <span class="parameters">(johndoe, k#G886@H, 35)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(Admin, Exelent2022Sdet!, 25)">
+                  </a> <!-- loginTest(Admin, Exelent2022Sdet!, 25) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(Admin, Exelent2022Sdet!, 25)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(EssUser, Ess@2023, 45)">
+                  </a> <!-- loginTest(EssUser, Ess@2023, 45) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(EssUser, Ess@2023, 45)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,7 +171,11 @@
 &lt;suite name=&quot;Default Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TestNGProject&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.exelenter.class4._03_DataProviderDemo2&quot;/&gt;
+      &lt;class name=&quot;com.exelenter.class4._04_DataProviderDemo3&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;loginTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.exelenter.class4._04_DataProviderDemo3 --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestNGProject --&gt;
 &lt;/suite&gt; &lt;!-- Default Suite --&gt;
@@ -184,16 +215,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.exelenter.class4._03_DataProviderDemo2')
-data.setCell(0, 3, 1419);
+data.setCell(0, 2, 'com.exelenter.class4._04_DataProviderDemo3')
+data.setCell(0, 3, 1391);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.exelenter.class4._04_DataProviderDemo3')
+data.setCell(1, 3, 1303);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'com.exelenter.class4._04_DataProviderDemo3')
+data.setCell(2, 3, 1297);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -219,18 +258,42 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.exelenter.class4._03_DataProviderDemo2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.exelenter.class4._04_DataProviderDemo3</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">3284 ms</span>
+                <span class="method-name">loginTest(Admin, Exelent2022Sdet!, 25)</span>
+                <span class="method-start">2594 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4706 ms</span>
+                <span class="method-start">3894 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">6085 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(johndoe, k#G886@H, 35)</span>
+                <span class="method-start">7499 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8803 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">10989 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(EssUser, Ess@2023, 45)</span>
+                <span class="method-start">12304 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13695 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
