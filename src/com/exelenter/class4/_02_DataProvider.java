@@ -1,5 +1,6 @@
 package com.exelenter.class4;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
@@ -13,12 +14,13 @@ public class _02_DataProvider {
     @Test
     void printData() {
         userList();
+        data();
 
 
     }
 
     //Manupulating without dataProvider
-    
+
     public void userList() {
         List<String> stringArrayList = new ArrayList<>();
         stringArrayList.add("John");
@@ -43,8 +45,36 @@ public class _02_DataProvider {
         Object[][] user2D = {
                 {"John Doe", " Sam Lee", 'c', 0.99},
                 {"John Doe", " Sam Lee", 'c', 5.65},
-                {"John Doe", " Sam Lee", 'c', 66.99}};
+                {"John Doe", " Sam Lee", 'c', 66.99}
+
+        };
         System.out.println("Arrays.deepToString(user2D) = " + Arrays.deepToString(user2D));
+
+        Arrays.stream(user2D).forEach(a -> System.out.println(Arrays.toString(a)));
+
+    }
+
+
+    // Manipulating DATA using DataProvider
+
+    @Test(dataProvider = "users")
+    public void printData2(String fistName, String lastName, int age) {
+        System.out.println(fistName + " " + lastName + " " + age);
+
+
+    }
+
+    @DataProvider
+    public Object[][] users() {
+
+        Object[][] user = {
+                {"John", "Doe", 20},
+                {"Sam", "Lee", 35},
+                {"Jack", "Sparrow", 40},
+
+
+        };
+        return user;
     }
 
 

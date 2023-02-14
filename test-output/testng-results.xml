@@ -1,16 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-10T21:48:35 EST" name="Default Suite" finished-at="2023-02-10T21:48:35 EST" duration-ms="79">
+  <suite started-at="2023-02-13T20:26:14 EST" name="Default Suite" finished-at="2023-02-13T20:26:14 EST" duration-ms="67">
     <groups>
     </groups>
-    <test started-at="2023-02-10T21:48:35 EST" name="TestNGProject" finished-at="2023-02-10T21:48:35 EST" duration-ms="79">
+    <test started-at="2023-02-13T20:26:14 EST" name="TestNGProject" finished-at="2023-02-13T20:26:14 EST" duration-ms="67">
       <class name="com.exelenter.class4._02_DataProvider">
-        <test-method signature="printData()[pri:0, instance:com.exelenter.class4._02_DataProvider@351d0846]" started-at="2023-02-10T21:48:35 EST" name="printData" finished-at="2023-02-10T21:48:35 EST" duration-ms="6" status="PASS">
+        <test-method signature="printData2(java.lang.String, java.lang.String, int)[pri:0, instance:com.exelenter.class4._02_DataProvider@6279cee3]" started-at="2023-02-13T20:26:14 EST" name="printData2" data-provider="users" finished-at="2023-02-13T20:26:14 EST" duration-ms="19" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printData -->
+        </test-method> <!-- printData2 -->
+        <test-method signature="printData2(java.lang.String, java.lang.String, int)[pri:0, instance:com.exelenter.class4._02_DataProvider@6279cee3]" started-at="2023-02-13T20:26:14 EST" name="printData2" data-provider="users" finished-at="2023-02-13T20:26:14 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lee]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[35]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printData2 -->
+        <test-method signature="printData2(java.lang.String, java.lang.String, int)[pri:0, instance:com.exelenter.class4._02_DataProvider@6279cee3]" started-at="2023-02-13T20:26:14 EST" name="printData2" data-provider="users" finished-at="2023-02-13T20:26:14 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jack]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sparrow]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[40]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printData2 -->
       </class> <!-- com.exelenter.class4._02_DataProvider -->
     </test> <!-- TestNGProject -->
   </suite> <!-- Default Suite -->
