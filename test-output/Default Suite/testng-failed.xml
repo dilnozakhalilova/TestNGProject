@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="TestNGProject(failed)">
     <classes>
-      <class name="test.LoginTest">
+      <class name="com.exelenter.class4._04_DataProviderDemo3">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="validAdminLogin"/>
+          <include name="loginTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- test.LoginTest -->
+      </class> <!-- com.exelenter.class4._04_DataProviderDemo3 -->
     </classes>
   </test> <!-- TestNGProject(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->
