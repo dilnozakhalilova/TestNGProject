@@ -1,6 +1,7 @@
 package com.exelenter.class4;
 
 import org.bouncycastle.jcajce.provider.symmetric.ARC4;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import utils.BaseClass;
 
@@ -18,12 +19,28 @@ import utils.BaseClass;
          8. Close the browser
  */
 public class _05_AddEmployee extends BaseClass {
-@Test
-    public void addEmployeeTest(){
-    loginPage.loginToWebsite("username","password");
+    @Test
+    public void addEmployeeTest(String firstName, String lastName) {
+        loginPage.loginToWebsite("username", "password");
+        wait(1);
+        pimPage.navigateToAddEmployee();
+        sendText(addEmployeePage.firstName, firstName);
+        sendText(addEmployeePage.lastName, lastName);
+        String expectedEmployeeId = addEmployeePage.employeeId.getAttribute("value");
+        clickButWaitForClickability(addEmployeePage.saveBtn);
+// Validate
+
+    }
 
 
-}
+    @DataProvider
+    public Object addemployeeMethod(){
+       return Object[][]{
+            {},
+            {},
+            {},
 
+        }
+    }
 
 }
