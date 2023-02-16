@@ -1,8 +1,11 @@
 package com.exelenter.class05;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.BaseClass;
 import utils.ConfigsReader;
+
+import static org.testng.Assert.*;
 
 /*
  Task: HW: Add Employees using Data Provider Annotation
@@ -41,6 +44,13 @@ public class _02_HW_AddEmployee extends BaseClass {
         System.out.println("password:  " + password);
         wait(1);
         click(addEmployeePage.saveBtn);
+
+
+        waitForVisibility(personalDetailsPage.personalDetailsHeader);
+        String actualEmployeeId = personalDetailsPage.employeeId.getAttribute("value");
+        assertEquals(actualEmployeeId, expectedEmployeeId, "Test failed. Employee ID does not match");
+        takeScreenshot(firstName + "_" + lastName + ".png");
+        System.out.println("New employee successfully added");
 
     }
 

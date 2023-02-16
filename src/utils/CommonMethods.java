@@ -299,7 +299,10 @@ public class CommonMethods extends PageInitializer {
         jsExecuter().executeScript("window.scrollBy(" + horizontalPixel + "," + verticatPixel + ")");
     }
 
-
+    /**
+     * Method will take a screenshot when called. Extension defined as .png( You can change to .jpeg from CommonMethods when needed)
+     * @param fileName String as a fileName(Screenshot name)
+     */
     public static void takeScreenshot(String fileName) {
         TakesScreenshot takeScreenshot = (TakesScreenshot) driver;   // telling driver to allow screenshots
         File sourceFile = takeScreenshot.getScreenshotAs(OutputType.FILE);   // actual value from the website
