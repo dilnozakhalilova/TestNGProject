@@ -26,7 +26,7 @@ public class AddEmployeePage extends BaseClass {
     public WebElement userName;
 
     @FindBy(id = "user_password")
-    public WebElement userPassword;
+    public WebElement password;
 
     @FindBy(id = "re_password")
     public WebElement confirmPassword;

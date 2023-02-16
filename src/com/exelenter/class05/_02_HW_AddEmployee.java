@@ -23,10 +23,24 @@ import utils.ConfigsReader;
  */
 public class _02_HW_AddEmployee extends BaseClass {
     @Test
-    public void addEmployeeTest() {
+    public void addEmployeeTest(String firstName, String lastName, String username, String password) {
         loginPage.loginToWebsite("username", "password");  // Log in to website
+        wait(1);
         pimPage.navigateToAddEmployee();
-
+        wait(1);
+        sendText(addEmployeePage.firstName, firstName);
+        sendText(addEmployeePage.lastName, lastName);
+        String expectedEmployeeId = addEmployeePage.employeeId.getAttribute("value");
+        System.out.println("expectedEmployeeId:  " + expectedEmployeeId);
+        jsClick(addEmployeePage.CreateLoginDetailsCheckbox); // in case an advertisement blocks it
+        wait(1);
+        sendText(addEmployeePage.userName, username);
+        sendText(addEmployeePage.password, password);
+        sendText(addEmployeePage.userName, password);
+        System.out.println("username:  " + username);
+        System.out.println("password:  " + password);
+        wait(1);
+        click(addEmployeePage.saveBtn);
 
     }
 
