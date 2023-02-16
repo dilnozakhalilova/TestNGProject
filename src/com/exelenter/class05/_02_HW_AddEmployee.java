@@ -1,9 +1,12 @@
 package com.exelenter.class05;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import utils.BaseClass;
 import utils.ConfigsReader;
+
+import java.util.Objects;
 
 import static org.testng.Assert.*;
 
@@ -25,7 +28,7 @@ import static org.testng.Assert.*;
               XML file.
  */
 public class _02_HW_AddEmployee extends BaseClass {
-    @Test
+    @Test(dataProvider = "addEmployees")
     public void addEmployeeTest(String firstName, String lastName, String username, String password) {
         loginPage.loginToWebsite("username", "password");  // Log in to website
         wait(1);
@@ -39,13 +42,14 @@ public class _02_HW_AddEmployee extends BaseClass {
         wait(1);
         sendText(addEmployeePage.userName, username);
         sendText(addEmployeePage.password, password);
-        sendText(addEmployeePage.userName, password);
+        sendText(addEmployeePage.confirmPassword, password);
         System.out.println("username:  " + username);
         System.out.println("password:  " + password);
         wait(1);
         click(addEmployeePage.saveBtn);
 
 
+        // Validation
         waitForVisibility(personalDetailsPage.personalDetailsHeader);
         String actualEmployeeId = personalDetailsPage.employeeId.getAttribute("value");
         assertEquals(actualEmployeeId, expectedEmployeeId, "Test failed. Employee ID does not match");
@@ -53,5 +57,20 @@ public class _02_HW_AddEmployee extends BaseClass {
         System.out.println("New employee successfully added");
 
     }
+
+    @DataProvider
+    public Object[][]addEmployees(){
+        return new Object[][]{
+                {"Sophie","Patelina", "sophiepatelina",randomStrongPassWord()},
+                {"Maria","Sharapova","msharapova",randomStrongPassWord()},
+                {"Jaclyn","Smith","jsmith",randomStrongPassWord()},
+                {"Marry","jackson","mjackson",randomStrongPassWord()},
+                {"Sam","Zarn","szarn",randomStrongPassWord()}
+
+        };
+
+    }
+
+
 
 }

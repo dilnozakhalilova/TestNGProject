@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 import static utils.BaseClass.driver;
@@ -313,6 +314,25 @@ public class CommonMethods extends PageInitializer {
             e.printStackTrace();
             System.out.println("Screenshot is not taken");
         }
+    }
+
+    /**
+     * Random Password creater
+     */
+
+    public static String randomStrongPassWord(){
+        String passWord = "";
+        Random rnd = new Random();
+        String lowerLetter = "abcdefghijklmnoprstuwxyz";
+        String capitalLetters = "ABCDEFGHIJKLMNOPRSTUWXYZ";
+        String specialChar = "!#$%&()*+,-.:;<=>?@[]^_{|}~";
+        while (passWord.length() < 12){
+            passWord += lowerLetter.charAt(rnd.nextInt(lowerLetter.length()));
+            passWord += capitalLetters.charAt(rnd.nextInt(capitalLetters.length()));
+            passWord += specialChar.charAt(rnd.nextInt(specialChar.length()));
+            passWord += rnd.nextInt(10);
+        }
+        return passWord;
     }
 
 
