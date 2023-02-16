@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import utils.BaseClass;
 import utils.Listener;
 
-public class _01_ListenerDemo extends BaseClass {
+public class _01_ListenerDemo {
 
     @Test
     void test1(){
