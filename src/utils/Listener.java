@@ -25,12 +25,12 @@ public class Listener implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
-        System.out.println("===== Regression Test Started ==== " + context.getName() +" "+ context.getStartDate());
+        System.out.println("===== Regression Test Started ==== " + context.getName() +" | "+ context.getStartDate());
     }
 
     @Override
     public void onFinish(ITestContext context) {
-        System.out.println("=== Regression Test Started === " + context.getName() +" "+ context.getEndDate());
+        System.out.println("=== Regression Test Started === " + context.getName() +" |  "+ context.getEndDate());
     }
 }
 

@@ -18,25 +18,35 @@ public class AddEmployeePage extends BaseClass {
     @FindBy(id = "photofile")
     public WebElement uploadPhoto;
 
+    @FindBy(id = "chkLogin")
+    public WebElement CreateLoginDetailsCheckbox;
+
+
+    @FindBy(id = "user_name")
+    public WebElement userName;
+
+    @FindBy(id = "user_password")
+    public WebElement userPassword;
+
+    @FindBy(id = "re_password")
+    public WebElement confirmPassword;
+
+
     @FindBy(id = "btnSave")
     public WebElement saveBtn;
 
 
-    public AddEmployeePage(){
-        PageFactory.initElements(driver,this);
+    public AddEmployeePage() {
+        PageFactory.initElements(driver, this);
     }
 
-    public void addEmployee(String empFirstName, String empLastName, String filePath){
-        sendText(firstName,empFirstName);
+    public void addEmployee(String empFirstName, String empLastName, String filePath) {
+        sendText(firstName, empFirstName);
         sendText(lastName, empLastName);
-        sendText(uploadPhoto,filePath);  // Retrieving photo location for uploading
+        sendText(uploadPhoto, filePath);  // Retrieving photo location for uploading
         clickButWaitForClickability(saveBtn);
 
     }
-
-
-
-
 
 
 }
