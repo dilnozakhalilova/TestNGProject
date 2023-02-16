@@ -50,6 +50,7 @@ public class _02_HW_AddEmployee extends BaseClass {
 
 
         // Validation
+
         waitForVisibility(personalDetailsPage.personalDetailsHeader);
         String actualEmployeeId = personalDetailsPage.employeeId.getAttribute("value");
         assertEquals(actualEmployeeId, expectedEmployeeId, "Test failed. Employee ID does not match");
