@@ -1,4 +1,28 @@
 package com.exelenter.class05;
 
-public class _01_ListenerDemo {
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import utils.BaseClass;
+import utils.Listener;
+
+public class _01_ListenerDemo extends BaseClass {
+
+    @Test
+    void test1(){
+        System.out.println("Test 1");
+
+    }
+
+    @Test
+    void test2(){
+        System.out.println("Test 2");
+        Assert.fail();
+    }
+
+
+
+
+
+
 }
