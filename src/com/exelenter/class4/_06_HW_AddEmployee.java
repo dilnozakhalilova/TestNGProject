@@ -1,6 +1,8 @@
 package com.exelenter.class4;
 
-public class _06_HW_AddEmployee {
+import utils.BaseClass;
+
+public class _06_HW_AddEmployee extends BaseClass {
 
 
 
