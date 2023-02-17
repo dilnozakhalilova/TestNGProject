@@ -26,9 +26,17 @@ public class excelUtility {
             e.printStackTrace();
         }
     }
+
     void getSheet(String sheetName) {
         sheet = workbook.getSheet(sheetName);
     }
 
+    int rowCount() {
+        return sheet.getPhysicalNumberOfRows();      // This method will return total count of rows
+
+    }
+int colCount(){
+        return sheet.getRow(0).getLastCellNum();   // This method will return total count of columns
+}
 
 }
