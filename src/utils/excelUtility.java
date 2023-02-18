@@ -49,9 +49,16 @@ public class excelUtility {
     public Object [][] readFromExcel(String filePath, String sheetName){
         getFilePath(filePath);
         getSheet(sheetName);
+        int rows=rowCount();
+        int cols = colCount();
 
+    Object [][] data= new Object[rows][cols];
+        for (int i = 1; i <rows ; i++) {
+            for (int j = 0; j < cols; j++) {
 
+            }
 
+        }
 
 
     }
