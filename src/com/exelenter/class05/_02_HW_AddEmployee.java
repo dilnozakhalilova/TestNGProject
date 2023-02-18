@@ -1,12 +1,9 @@
 package com.exelenter.class05;
 
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import utils.BaseClass;
-import utils.ConfigsReader;
-
-import java.util.Objects;
+import utils.ExcelUtility;
 
 import static org.testng.Assert.*;
 
@@ -27,7 +24,7 @@ import static org.testng.Assert.*;
               BONUS: Specify a group name for this test case, and execute from the
               XML file.
  */
-public class  _02_HW_AddEmployee extends BaseClass {
+public class _02_HW_AddEmployee extends BaseClass {
     @Test(dataProvider = "addEmployees")
     public void addEmployeeTest(String firstName, String lastName, String username, String password) {
         loginPage.loginToWebsite("username", "password");  // Log in to website
@@ -77,14 +74,15 @@ public class  _02_HW_AddEmployee extends BaseClass {
             throw new RuntimeException("Employee is not added. Username or ID already exits.");
         }
     }
+
     @DataProvider
-    public Object[][]addEmployees(){
+    public Object[][] addEmployees() {
         return new Object[][]{
-                {"Sophie","Patelina", "sophiepatelina123",randomStrongPassWord()},
-                {"Maria","Sharapova","msharapova123",randomStrongPassWord()},
-                {"Jaclyn","Smith","jsmith123",randomStrongPassWord()},
-                {"Marry","jackson","mjackson",randomStrongPassWord()},
-                {"Sam","Zarn","szarn123",randomStrongPassWord()}
+                {"Sophie", "Patelina", "sophiepatelina123", randomStrongPassWord()},
+                {"Maria", "Sharapova", "msharapova123", randomStrongPassWord()},
+                {"Jaclyn", "Smith", "jsmith123", randomStrongPassWord()},
+                {"Marry", "jackson", "mjackson", randomStrongPassWord()},
+                {"Sam", "Zarn", "szarn123", randomStrongPassWord()}
 
         };
 
@@ -92,17 +90,15 @@ public class  _02_HW_AddEmployee extends BaseClass {
 
     // 2nd Way How to read data from Excel
 
-@DataProvider
-    public Object[][]getDataFromExcel(){
+    @DataProvider
+    public Object[][] getDataFromExcel() {
         // I will bring method from ExcelUtility, therefore my method return must match==Object[][]
+        String absolutePath = ExcelUtility.projectPath + "testData/ExelenterEmployees.xlsx";
+
+
 
 
     }
-
-
-
-
-
 
 
 }

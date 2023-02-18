@@ -5,15 +5,13 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Objects;
 
 // we need to import Apache POI libraries for this to work
-public class excelUtility {
+public class ExcelUtility {
     // Order: 1.filePath, 2.Workbook, 3.Sheet, 4.Rows & Col, 5.Cell
 
-    static String projectPath = System.getProperty("user.dir");
+   public static String projectPath = System.getProperty("user.dir");
     FileInputStream fis;
     Workbook workbook;
     Sheet sheet;
