@@ -25,7 +25,7 @@ import static org.testng.Assert.*;
               XML file.
  */
 public class _02_HW_AddEmployee extends BaseClass {
-    @Test(dataProvider = "readFromExcel")
+    @Test(dataProvider = "readFromExcel",groups = {"smoke","regression","excel"})
     public void addEmployeeTest(String firstName, String lastName, String username, String password) {
         loginPage.loginToWebsite("username", "password");  // Log in to website
         wait(1);

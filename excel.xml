@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Excel Test Suite">
+    <test name="Read From Excel Test">
+        <groups>
+            <run>
+                <include name="excel"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.exelenter.class05._02_HW_AddEmployee">
+                <methods>
+                    <include name="addEmployeeTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
