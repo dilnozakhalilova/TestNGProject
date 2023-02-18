@@ -50,7 +50,7 @@ public class ExcelUtility {
         int rows = rowCount();
         int cols = colCount();
 
-        Object[][] data = new Object[rows][cols];
+        Object[][] data = new Object[rows-1][cols];
         for (int i = 1; i < rows; i++) {            // Start from one to avoid header
             for (int j = 0; j < cols; j++) {
                 //sheet.getRow(i-1).getCell(columIndex).toString();

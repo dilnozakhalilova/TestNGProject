@@ -25,7 +25,7 @@ import static org.testng.Assert.*;
               XML file.
  */
 public class _02_HW_AddEmployee extends BaseClass {
-    @Test(dataProvider = "addEmployees")
+    @Test(dataProvider = "readFromExcel")
     public void addEmployeeTest(String firstName, String lastName, String username, String password) {
         loginPage.loginToWebsite("username", "password");  // Log in to website
         wait(1);
@@ -90,10 +90,10 @@ public class _02_HW_AddEmployee extends BaseClass {
 
     // 2nd Way How to read data from Excel
 
-    @DataProvider
+    @DataProvider(name = "readFromExcel")
     public Object[][] getDataFromExcel() {
         // I will bring method from ExcelUtility, therefore my method return must match==Object[][]
-        String absolutePath = ExcelUtility.projectPath + "testData/ExelenterEmployees.xlsx";
+        String absolutePath = ExcelUtility.projectPath + "/testData/ExelenterEmployees.xlsx";   // DONOT Forget / before testData
         return ExcelUtility.readFromExcel(absolutePath,"Employee");
     }
 

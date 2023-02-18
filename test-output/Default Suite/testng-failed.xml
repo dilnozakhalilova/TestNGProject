@@ -6,7 +6,7 @@
       <class name="com.exelenter.class05._02_HW_AddEmployee">
         <methods>
           <include name="tearDown"/>
-          <include name="addEmployeeTest" invocation-numbers="3"/>
+          <include name="addEmployeeTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.exelenter.class05._02_HW_AddEmployee -->
