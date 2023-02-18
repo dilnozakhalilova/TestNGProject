@@ -11,12 +11,12 @@ import java.io.IOException;
 public class ExcelUtility {
     // Order: 1.filePath, 2.Workbook, 3.Sheet, 4.Rows & Col, 5.Cell
 
-   public static String projectPath = System.getProperty("user.dir");
-    FileInputStream fis;
-    Workbook workbook;
-    Sheet sheet;
+    public static String projectPath = System.getProperty("user.dir");
+    private static FileInputStream fis;
+    private static Workbook workbook;
+    private static Sheet sheet;
 
-    void getFilePath(String filePath) {
+    private static void getFilePath(String filePath) {
 
         try {
             fis = new FileInputStream(filePath);
@@ -26,25 +26,25 @@ public class ExcelUtility {
         }
     }
 
-    void getSheet(String sheetName) {
+    private static void getSheet(String sheetName) {
         sheet = workbook.getSheet(sheetName);
     }
 
-    int rowCount() {
+    private static int rowCount() {
         return sheet.getPhysicalNumberOfRows();      // This method will return total count of rows
 
     }
 
-    int colCount() {
+    private static int colCount() {
         return sheet.getRow(0).getLastCellNum();   // This method will return total count of columns
     }
 
-    String getCell(int rowIndex, int columIndex) {  // This method will read from a cell based on the inder of given row and column.
+    private static String getCell(int rowIndex, int columIndex) {  // This method will read from a cell based on the inder of given row and column.
         return sheet.getRow(rowIndex).getCell(columIndex).toString();
     }
 
 
-    public Object[][] readFromExcel(String filePath, String sheetName) {
+    public static Object[][] readFromExcel(String filePath, String sheetName) {
         getFilePath(filePath);
         getSheet(sheetName);
         int rows = rowCount();
@@ -56,7 +56,7 @@ public class ExcelUtility {
                 //sheet.getRow(i-1).getCell(columIndex).toString();
                 // data[i][j]=sheet.getRow(i-1).getCell(columIndex).toString();
                 // String cellValue = getCell(i, j);
-                data[i-1][j] = getCell(i, j);  // we are storing in Object to be able to use in DATAPROVIDER. All above are the same
+                data[i - 1][j] = getCell(i, j);  // we are storing in Object to be able to use in DATAPROVIDER. All above are the same
             }
 
         }
