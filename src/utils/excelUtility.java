@@ -46,21 +46,24 @@ public class excelUtility {
     }
 
 
-    public Object [][] readFromExcel(String filePath, String sheetName){
+    public Object[][] readFromExcel(String filePath, String sheetName) {
         getFilePath(filePath);
         getSheet(sheetName);
-        int rows=rowCount();
+        int rows = rowCount();
         int cols = colCount();
 
-    Object [][] data= new Object[rows][cols];
-        for (int i = 1; i <rows ; i++) {            // Start from one to avoid header
+        Object[][] data = new Object[rows][cols];
+        for (int i = 1; i < rows; i++) {            // Start from one to avoid header
             for (int j = 0; j < cols; j++) {
-
+                //sheet.getRow(i-1).getCell(columIndex).toString();
+                // data[i][j]=sheet.getRow(i-1).getCell(columIndex).toString();
+                // String cellValue = getCell(i, j);
+                data[i-1][j] = getCell(i, j);  // we are storing in Object to be able to use in DATAPROVIDER. All above are the same
             }
 
         }
 
-
+        return data;
     }
 
 }

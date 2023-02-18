@@ -92,7 +92,12 @@ public class  _02_HW_AddEmployee extends BaseClass {
 
     // 2nd Way How to read data from Excel
 
+@DataProvider
+    public Object[][]getDataFromExcel(){
+        // I will bring method from ExcelUtility, therefore my method return must match==Object[][]
 
+
+    }
 
 
 
