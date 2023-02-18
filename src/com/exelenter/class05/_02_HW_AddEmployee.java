@@ -94,11 +94,7 @@ public class _02_HW_AddEmployee extends BaseClass {
     public Object[][] getDataFromExcel() {
         // I will bring method from ExcelUtility, therefore my method return must match==Object[][]
         String absolutePath = ExcelUtility.projectPath + "testData/ExelenterEmployees.xlsx";
-        ExcelUtility.read
-
-
-
-
+        return ExcelUtility.readFromExcel(absolutePath,"Employee");
     }
 
 
