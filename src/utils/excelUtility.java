@@ -53,7 +53,7 @@ public class excelUtility {
         int cols = colCount();
 
     Object [][] data= new Object[rows][cols];
-        for (int i = 1; i <rows ; i++) {
+        for (int i = 1; i <rows ; i++) {            // Start from one to avoid header
             for (int j = 0; j < cols; j++) {
 
             }
