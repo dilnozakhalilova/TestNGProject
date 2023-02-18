@@ -7,6 +7,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Objects;
 
 // we need to import Apache POI libraries for this to work
 public class excelUtility {
@@ -35,8 +36,24 @@ public class excelUtility {
         return sheet.getPhysicalNumberOfRows();      // This method will return total count of rows
 
     }
-int colCount(){
+
+    int colCount() {
         return sheet.getRow(0).getLastCellNum();   // This method will return total count of columns
-}
+    }
+
+    String getCell(int rowIndex, int columIndex) {  // This method will read from a cell based on the inder of given row and column.
+        return sheet.getRow(rowIndex).getCell(columIndex).toString();
+    }
+
+
+    public Object [][] readFromExcel(String filePath, String sheetName){
+        getFilePath(filePath);
+        getSheet(sheetName);
+
+
+
+
+
+    }
 
 }
