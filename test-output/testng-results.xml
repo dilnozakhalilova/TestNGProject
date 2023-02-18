@@ -2,25 +2,25 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-17T22:24:20 EST" name="Excel Test Suite" finished-at="2023-02-17T22:25:33 EST" duration-ms="72644">
+  <suite started-at="2023-02-17T22:40:14 EST" name="Excel Test Suite" finished-at="2023-02-17T22:41:26 EST" duration-ms="71861">
     <groups>
       <group name="excel">
-        <method signature="_02_HW_AddEmployee.addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" name="addEmployeeTest" class="com.exelenter.class05._02_HW_AddEmployee"/>
+        <method signature="_02_HW_AddEmployeeFromExcel.addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" name="addEmployeeTest" class="com.exelenter.class05._02_HW_AddEmployeeFromExcel"/>
       </group> <!-- excel -->
       <group name="regression">
-        <method signature="_02_HW_AddEmployee.addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" name="addEmployeeTest" class="com.exelenter.class05._02_HW_AddEmployee"/>
+        <method signature="_02_HW_AddEmployeeFromExcel.addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" name="addEmployeeTest" class="com.exelenter.class05._02_HW_AddEmployeeFromExcel"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="_02_HW_AddEmployee.addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" name="addEmployeeTest" class="com.exelenter.class05._02_HW_AddEmployee"/>
+        <method signature="_02_HW_AddEmployeeFromExcel.addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" name="addEmployeeTest" class="com.exelenter.class05._02_HW_AddEmployeeFromExcel"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-02-17T22:24:20 EST" name="Read From Excel Test" finished-at="2023-02-17T22:25:33 EST" duration-ms="72644">
-      <class name="com.exelenter.class05._02_HW_AddEmployee">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:24:21 EST" name="setUp" finished-at="2023-02-17T22:24:28 EST" duration-ms="7071" status="PASS">
+    <test started-at="2023-02-17T22:40:14 EST" name="Read From Excel Test" finished-at="2023-02-17T22:41:26 EST" duration-ms="71861">
+      <class name="com.exelenter.class05._02_HW_AddEmployeeFromExcel">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:40:15 EST" name="setUp" finished-at="2023-02-17T22:40:20 EST" duration-ms="5515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:24:28 EST" name="addEmployeeTest" data-provider="readFromExcel" finished-at="2023-02-17T22:24:37 EST" duration-ms="9241" status="PASS">
+        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:40:20 EST" name="addEmployeeTest" data-provider="readFromExcel" finished-at="2023-02-17T22:40:30 EST" duration-ms="9357" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[msamuels123]]>
+                <![CDATA[msamuels1235]]>
               </value>
             </param>
             <param index="3">
@@ -46,15 +46,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:24:37 EST" name="tearDown" finished-at="2023-02-17T22:24:39 EST" duration-ms="2159" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:40:30 EST" name="tearDown" finished-at="2023-02-17T22:40:32 EST" duration-ms="2151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:24:39 EST" name="setUp" finished-at="2023-02-17T22:24:41 EST" duration-ms="1393" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:40:32 EST" name="setUp" finished-at="2023-02-17T22:40:33 EST" duration-ms="1374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:24:41 EST" name="addEmployeeTest" data-provider="readFromExcel" finished-at="2023-02-17T22:24:50 EST" duration-ms="9560" status="PASS">
+        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:40:33 EST" name="addEmployeeTest" data-provider="readFromExcel" finished-at="2023-02-17T22:40:43 EST" duration-ms="9855" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,7 +68,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[sjones12]]>
+                <![CDATA[sjones125]]>
               </value>
             </param>
             <param index="3">
@@ -80,15 +80,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:24:50 EST" name="tearDown" finished-at="2023-02-17T22:24:52 EST" duration-ms="2188" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:40:43 EST" name="tearDown" finished-at="2023-02-17T22:40:45 EST" duration-ms="2172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:24:52 EST" name="setUp" finished-at="2023-02-17T22:24:54 EST" duration-ms="1409" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:40:45 EST" name="setUp" finished-at="2023-02-17T22:40:47 EST" duration-ms="1386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:24:54 EST" name="addEmployeeTest" data-provider="readFromExcel" finished-at="2023-02-17T22:25:06 EST" duration-ms="11852" status="PASS">
+        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:40:47 EST" name="addEmployeeTest" data-provider="readFromExcel" finished-at="2023-02-17T22:40:56 EST" duration-ms="9008" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,7 +102,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[wjohnson123]]>
+                <![CDATA[wjohnson1235]]>
               </value>
             </param>
             <param index="3">
@@ -114,15 +114,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:25:06 EST" name="tearDown" finished-at="2023-02-17T22:25:08 EST" duration-ms="2200" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:40:56 EST" name="tearDown" finished-at="2023-02-17T22:40:58 EST" duration-ms="2152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:25:08 EST" name="setUp" finished-at="2023-02-17T22:25:09 EST" duration-ms="1571" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:40:58 EST" name="setUp" finished-at="2023-02-17T22:40:59 EST" duration-ms="1358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:25:09 EST" name="addEmployeeTest" data-provider="readFromExcel" finished-at="2023-02-17T22:25:18 EST" duration-ms="8649" status="PASS">
+        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:40:59 EST" name="addEmployeeTest" data-provider="readFromExcel" finished-at="2023-02-17T22:41:11 EST" duration-ms="12059" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -136,7 +136,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[asmith12]]>
+                <![CDATA[asmith125]]>
               </value>
             </param>
             <param index="3">
@@ -148,15 +148,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:25:18 EST" name="tearDown" finished-at="2023-02-17T22:25:20 EST" duration-ms="2144" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:41:11 EST" name="tearDown" finished-at="2023-02-17T22:41:13 EST" duration-ms="2159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:25:20 EST" name="setUp" finished-at="2023-02-17T22:25:22 EST" duration-ms="1396" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:41:13 EST" name="setUp" finished-at="2023-02-17T22:41:15 EST" duration-ms="1424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:25:22 EST" name="addEmployeeTest" data-provider="readFromExcel" finished-at="2023-02-17T22:25:30 EST" duration-ms="8670" status="PASS">
+        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:41:15 EST" name="addEmployeeTest" data-provider="readFromExcel" finished-at="2023-02-17T22:41:24 EST" duration-ms="8828" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -170,7 +170,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[jshmit123]]>
+                <![CDATA[jshmit1235]]>
               </value>
             </param>
             <param index="3">
@@ -182,11 +182,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@6b4a4e18]" started-at="2023-02-17T22:25:30 EST" name="tearDown" finished-at="2023-02-17T22:25:33 EST" duration-ms="2232" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployeeFromExcel@27c86f2d]" started-at="2023-02-17T22:41:24 EST" name="tearDown" finished-at="2023-02-17T22:41:26 EST" duration-ms="2145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.exelenter.class05._02_HW_AddEmployee -->
+      </class> <!-- com.exelenter.class05._02_HW_AddEmployeeFromExcel -->
     </test> <!-- Read From Excel Test -->
   </suite> <!-- Excel Test Suite -->
 </testng-results>

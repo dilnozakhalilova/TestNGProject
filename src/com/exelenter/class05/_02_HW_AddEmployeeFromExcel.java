@@ -24,7 +24,7 @@ import static org.testng.Assert.*;
               BONUS: Specify a group name for this test case, and execute from the
               XML file.
  */
-public class _02_HW_AddEmployee extends BaseClass {
+public class _02_HW_AddEmployeeFromExcel extends BaseClass {
     @Test(dataProvider = "readFromExcel",groups = {"smoke","regression","excel"})
     public void addEmployeeTest(String firstName, String lastName, String username, String password) {
         loginPage.loginToWebsite("username", "password");  // Log in to website
