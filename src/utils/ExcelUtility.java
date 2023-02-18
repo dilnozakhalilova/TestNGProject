@@ -61,6 +61,13 @@ public class ExcelUtility {
 
         }
 
+        try {
+            workbook.close();
+            fis.close();   // garbage collector===> memory is closed.
+            // When finish with the scanner or workbook always close. It is optional but highly recommended.
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return data;
     }
 
