@@ -33,5 +33,6 @@ public class _03_HW_LoginTestNegative extends BaseClass {
 @Test
     void print(){
     System.out.println("Test");
+    System.out.println("One more");
 }
 }
