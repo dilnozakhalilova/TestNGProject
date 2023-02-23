@@ -1,5 +1,6 @@
 package com.exelenter.class05;
 
+import org.testng.annotations.Test;
 import utils.BaseClass;
 
 /*
@@ -29,5 +30,8 @@ Make a matrix to make your job easier
  */
 public class _03_HW_LoginTestNegative extends BaseClass {
 
-
+@Test
+    void print(){
+    System.out.println("Test");
+}
 }
