@@ -18,7 +18,7 @@ public class AddEmployeeTest extends BaseClass {
     }
     @ Test
     void print(){
-        System.out.println("test");
+        System.out.println("HiWorld");
     }
 
 }
